@@ -23,7 +23,6 @@ pipeline {
  steps {
  bat 'echo === Étape 3 : Simuler un déploiement local ==='
  //bat 'echo Le fichier index.html est prêt à être affiché'
- bat "docker build -t %IMAGE%:%TAG% -f docker ."
  }
  }
  stage('Étape 4 : Fin du build') {
